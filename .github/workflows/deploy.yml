@@ -16,7 +16,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.13'  # Utilisez la version Python que vous utilisez dans votre projet
+          python-version: '3.13'  
 
       - name: Install dependencies
         run: |
@@ -26,6 +26,6 @@ jobs:
       - name: Deploy to Heroku
         uses: akshnz/heroku-deploy@v1
         with:
-          heroku_api_key: ${{ secrets.HEROKU_API_KEY }}  # Définissez cette clé dans vos secrets GitHub
-          heroku_app_name: "your-heroku-app-name"  # Remplacez par le nom de votre app Heroku
-          heroku_email: ${{ secrets.HEROKU_EMAIL }}  # Définissez cette variable d'email dans vos secrets GitHub
+          heroku_api_key: ${{ secrets.HEROKU_API_KEY }}  
+          heroku_app_name: "Down"  # 
+          heroku_email: ${{ secrets.HEROKU_EMAIL }}  
